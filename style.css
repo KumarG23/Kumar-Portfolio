@@ -1,18 +1,15 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  cursor: url(img/chopsticks.png), auto;
 }
 
-#left-side {
-    background-image: linear-gradient(45deg, #24ff6d, #f3079c);
+body {
+  background-color: beige;
+  cursor: url(img/chopsticks.png), auto;
 }
 
-body::before {
-    background: linear-gradient(45deg, #24ff6d, #05a2f1, #f3079c);
-    filter: blur(40px);
-    animation: glowing 5s infinite;
-
-}
-
+*/
+/*
 @keyframes glowing {
     0% {
         background-position: 0 50%;
@@ -24,13 +21,44 @@ body::before {
         background-position: 50% 0;
     }
 }
+*/
 
 header {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-#socials{
-    font-size: 3rem;
-    padding: 2rem;
+#socials {
+  font-size: 2.5rem;
+  cursor: url(img/chopsticks.png), auto;
 }
 
+#icon {
+  color: #81b14f;
+  cursor: url(img/chopsticks.png), auto;
+}
+
+#icon:hover {
+  color: #451b04;
+}
+
+#info {
+  background: -webkit-linear-gradient(#81b14f, #451b04);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: transparent;
+}
+
+.btn {
+    background-color: #451b04;
+}
+
+.btn:hover {
+    background-color: #81b14f;
+    color: #451b04;
+    transform: translateY(-8px);
+}
+
+#left-side {
+    margin: auto;
+    width: 50%;
+}
