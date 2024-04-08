@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#left-side {
+    background-image: linear-gradient(45deg, #24ff6d, #f3079c);
+}
+
+body::before {
+    background: linear-gradient(45deg, #24ff6d, #05a2f1, #f3079c);
+    filter: blur(40px);
+    animation: glowing 5s infinite;
+
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0;
+    }
+}
+
+header {
+    justify-content: space-between;
+}
+
+#socials{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
